@@ -23,7 +23,7 @@ GDB     = gdb-multiarch
 
 # --- Directories ---
 BUILD_DIR  = build
-COMMON_DIR = common
+COMMON_DIR = make-common
 
 # --- Cortex-M4 flags ---
 CPU_FLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16
