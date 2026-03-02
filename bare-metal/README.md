@@ -16,7 +16,8 @@ startup code for bare metal applications. This includes:
 3. `src/system_init.c` : system initialization file
     - TODO
 4. `/include/stm32mp157fxx.h` : Header file definitions for the stm32p32mp157 processor
-    - TODO
+    - Register definition header for the STM32MP157F. Defines all needed base addresses and 
+      register structures for peripherals used in my base metal exercises. 
 5. `Makefile` : Make 
 
 
