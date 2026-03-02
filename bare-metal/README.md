@@ -6,7 +6,9 @@ The `make-common/` directory holds is a directory for holding all necessary
 startup code for bare metal applications. This includes: 
 
 1. `linker.ld`  : linker script 
-    - TODO
+    - Configuration file that tells the linker tool exactly where to map my code and data 
+      onto physical memory of the hardware.
+    - Manual blueprint of the device memory layout for my program.
 2. `startup.s`  : startup file 
     - Assembly code file that provides low-level initialization 
       for out program / micro controller that is needed before 
