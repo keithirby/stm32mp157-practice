@@ -4,9 +4,11 @@
  * Memory Map (from RM0436 Pg. 160/4054):
  *   MCU SRAM1: 0x1000_0000 - 0x1001_FFFF (128KB)
  *   MCU SRAM2: 0x1002_0000 - 0x1003_FFFF (128KB)
- *   MCU SRAM3: 0x1004_0000 - 0x1005_FFFF (128KB) - TODO: FIX THIS
- *   MCU SRAM4: 0x1006_0000 - 0x1007_FFFF (128KB) - TODO: FIX THIS 
- *   RETRAM:    0x0000_0000 - 0x0000_FFFF (64KB) ??? - BOOT area, need more info
+ *   MCU SRAM3: 0x1004_0000 - 0x1005_FFFF (128KB)
+ *   MCU SRAM3: 0x1004_0000 - 0x1004_FFFF (64KB)
+ *   MCU SRAM4: 0x1005_0000 - 0x1005_FFFF (64KB) 
+ *   RETRAM:    0x0000_0000 - 0x0000_FFFF (64KB)
+ *      - RETRAM (Retention RAM), low power internal SRAM used to store retention firmware
  *
  * We place the vector table and code in SRAM1, and use SRAM2 for data/stack.
  * Adjust sizes based on your needs and what RM0436 confirms.
